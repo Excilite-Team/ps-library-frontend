@@ -51,8 +51,8 @@ export default function AuthBar() {
                     </div>
                     :
                     <div className={'authbar d-flex justify-content-between justify-content-md-evenly align-items-center'}>
-                        <Button title={"Ro'yhatdan o'tish"} variant="primary"><Link to={'/auth/register'} className='color'><RiLoginCircleLine /></Link></Button>
-                        <Button title={"Tizimga kirish"} variant='primary'><Link to={'/auth/login'} className='color'><RiAccountCircleFill /></Link></Button>
+                        <Link to={'/auth/register'} className='color'><Button title={"Ro'yhatdan o'tish"} variant="primary"><RiLoginCircleLine /></Button></Link>
+                        <Link to={'/auth/login'} className='color'><Button title={"Tizimga kirish"} variant='primary'><RiAccountCircleFill /></Button></Link>
                     </div>
             }
         </>

@@ -36,7 +36,7 @@ export default function BookDetails({ book, show, onHide }) {
             </Modal.Header>
             <Modal.Body className={"py-5"}>
                 <Row>
-                    <Col className="text-center">
+                    <Col className="text-center mb-4 mb-md-0">
                         <div className={'book-image p-4'}>
                             <img src={book.image} width="200px" height="350px" alt="" />
                         </div>

@@ -7,8 +7,20 @@
     /* margin: 1%; */
 }
 
+.book .card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .book img {
     height: 350px;
+}
+
+.book button {
+    background-color: #265CE7;
+    border-radius: 10px;
+    width: 75%;
 }
 
 .book-details {

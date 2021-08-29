@@ -44,9 +44,15 @@ export default function Orders() {
                     :
                     <div className={"orders row"}>
                         {
-                            orders.map(order => (
-                                <Order order={order} />
-                            ))
+                            orders.length > 0
+                                ?
+                                orders.map(order => (
+                                    <Order order={order} />
+                                ))
+                                :
+                                <div className="text-center text-muted py-5 my-5">
+                                    <h2>Siz hech qanday kitob so'ramagansiz...</h2>
+                                </div>
                         }
                     </div>
             }

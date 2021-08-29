@@ -2,6 +2,21 @@
     display: flex;
 } */
 
-/* .order {
-    width: 20%;
-} */
+.order .card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.order .card .card-header {
+    background-color: #265CE7;
+}
+
+.order button {
+    border-radius: 10px;
+    width: 75%;
+}
+
+.order button.btn-primary {
+    background-color: #265CE7;
+}

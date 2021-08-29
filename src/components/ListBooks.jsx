@@ -28,7 +28,7 @@ export default function ListBooks({ books }) {
     }
 
     return (
-        <div className='books-list'>
+        <div className='books-list mb-5'>
             <FilterArea categories={categories} onFilter={handleFilter} />
             {
                 filteredBooks?.length > 0

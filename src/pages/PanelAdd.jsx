@@ -42,8 +42,8 @@ export default function Paneladd() {
                             <Form.Label>Yozuvchi*:</Form.Label>
                             <Form.Control required type="text" name="author" placeholder={'Yozuvchi ismini kiriting'} />
                         </Form.Group>
-                        <Form.Group className={'mb-3'} controlId={'book-name'}>
-                            <Form.Label>Kitob nomi*:</Form.Label>
+                        <Form.Group className={'mb-3'} controlId={'book-genre'}>
+                            <Form.Label>Kitob janri*:</Form.Label>
                             <Form.Select required name="genre" defaultValue={'default'}>
                                 <option disabled value="default">Kategoriyani tanlang</option>
                                 <option>sarguzasht</option>
