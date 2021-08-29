@@ -57,6 +57,7 @@ export default function Paneladd() {
                                 <option>biografiya</option>
                                 <option>avtobiografiya</option>
                                 <option>falsafa</option>
+                                <option>shaxsiy-rivojlanish</option>
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className={'mb-3'} controlId={'book-image'}>
