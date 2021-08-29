@@ -1,0 +1,9 @@
+.authbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.authbar > * {
+    margin: 0 10px;
+}

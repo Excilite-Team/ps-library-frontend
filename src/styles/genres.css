@@ -1,0 +1,10 @@
+.genres-inner {
+    scroll-behavior: smooth;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.genres {
+    display: flex;
+    align-items: center;
+}

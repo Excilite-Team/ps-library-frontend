@@ -1,19 +1,19 @@
 import React from "react";
 import api from "../api";
-import useQuery from "../hooks/useQuery"
 import Layout from '../components/Layout';
 import NavBar from '../components/Navbar';
 import ListBooks from '../components/ListBooks';
+import { useParams } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 
-export default function Search(props) {
-    const query = useQuery().get("query");
+export default function Category() {
+    const { name } = useParams();
     const [books, setBooks] = React.useState([]);
     const [loading, setLoading] = React.useState(true);
 
     React.useEffect(() => {
         let fetchCategory = async () => {
-            const { success, data } = await api.get(`/books?name=${query}`);
+            const { success, data } = await api.get(`/books?genre=${name.toLowerCase()}`);
             if (success) {
                 setBooks(data?.data);
             } else {
@@ -22,10 +22,10 @@ export default function Search(props) {
             setLoading(false);
         };
         fetchCategory();
-    }, [query, books, loading]);
+    }, [name, books, loading]);
 
     return (
-        <Layout title={`Search results - ${query}`}>
+        <Layout title={"Category " + name.toLowerCase()}>
             <NavBar />
             <hr />
             {

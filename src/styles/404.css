@@ -1,0 +1,14 @@
+.not-found {
+    height: 95vh;
+    background-color: #F7F7F7;
+}
+
+.not-found img {
+    height: 95vh;
+}
+
+.not-found .content {
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 40vh auto;
+}

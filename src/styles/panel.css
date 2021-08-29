@@ -1,0 +1,18 @@
+.sidebar {
+    background-color: #1C212D;
+    height: 100vh;
+    font-size: 3em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    width: 50%;
+}
+
+.sidebar a {
+    color: #636D7B;
+}
+
+.sidebar li.active a {
+    color: #34DBA1;
+}

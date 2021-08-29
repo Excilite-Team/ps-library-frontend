@@ -1,0 +1,10 @@
+.slider {
+    display: block;
+    position: relative;
+}
+
+.slider img {
+    width: 100%!important;
+    height: 600px;
+    filter: brightness(50%) sepia(.3);
+}
