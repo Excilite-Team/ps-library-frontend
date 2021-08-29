@@ -22,7 +22,7 @@ export default function Category() {
             setLoading(false);
         };
         fetchCategory();
-    }, [name, books, loading]);
+    }, [name]);
 
     return (
         <Layout title={"Category " + name.toLowerCase()}>
