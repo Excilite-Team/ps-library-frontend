@@ -33,7 +33,7 @@ export default function Slider() {
         },
         {
             image: './slider7.jpg',
-            title: "Maxsus filtr orqali o’zingiz qiziqadigan kitoblarni tanlab olishngiz mumkin!"
+            title: "Maxsus filtr orqali o’zingiz qiziqadigan kitoblarni tanlab olishingiz mumkin!"
         }
     ];
     return (
