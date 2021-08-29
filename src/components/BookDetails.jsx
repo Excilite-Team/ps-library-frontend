@@ -37,11 +37,11 @@ export default function BookDetails({ book, show, onHide }) {
             <Modal.Body className={"py-5"}>
                 <Row>
                     <Col className="text-center mb-4 mb-md-0">
-                        <div className={'book-image p-4'}>
+                        <div className={'book-image p-5'}>
                             <img src={book.image} width="200px" height="350px" alt="" />
                         </div>
                     </Col>
-                    <Col>
+                    <Col className={'pt-5 text-center text-sm-start'}>
                         <h4 className={'mb-2'}>
                             <b>Nomi: </b>{book.name}
                         </h4>
@@ -59,7 +59,7 @@ export default function BookDetails({ book, show, onHide }) {
                                 }
                             </Badge>
                         </h4>
-                        <Button variant="primary" disabled={!book.isAvailable || disabled} onClick={handleSubmit}>Navbatga yozilish</Button>
+                        <Button className={'book-request-btn'} variant="primary" disabled={!book.isAvailable || disabled} onClick={handleSubmit}>Navbatga yozilish</Button>
                     </Col>
                 </Row>
             </Modal.Body>

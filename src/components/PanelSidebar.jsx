@@ -2,7 +2,7 @@ import React from 'react';
 import { } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { IoMdAddCircle, IoMdTimer, IoMdBookmarks } from 'react-icons/io';
-import { MdAccountCircle } from 'react-icons/md';
+import { MdAccountCircle, MdHome } from 'react-icons/md';
 import '../styles/panel.css';
 
 export default function PanelSidebar() {
@@ -25,7 +25,7 @@ export default function PanelSidebar() {
     }, []);
     return (
         <div className={'sidebar col-sm-2 col-md-1'}>
-            <ul className={'mx-auto p-0'}>
+            <ul className={'mx-auto p-0 d-flex flex-column'}>
                 <li className={active === 'profile' && 'active'}>
                     <Link to={'/panel'} onClick={() => updateActive('profile')}>
                         <MdAccountCircle />
@@ -45,6 +45,11 @@ export default function PanelSidebar() {
                 <li className={active === 'books' && 'active'}>
                     <Link to={'/panel/books'} onClick={() => updateActive('books')}>
                         <IoMdBookmarks />
+                    </Link>
+                </li>
+                <li className={'home-btn'}>
+                    <Link to={'/'}>
+                        <MdHome />
                     </Link>
                 </li>
             </ul>

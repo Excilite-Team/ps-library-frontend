@@ -49,3 +49,8 @@
 .sidebar li.active a {
     color: #34DBA1;
 }
+
+.sidebar li.home-btn {
+    position: absolute;
+    bottom: 3%;
+}
