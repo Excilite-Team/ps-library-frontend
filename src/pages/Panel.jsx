@@ -14,7 +14,7 @@ export default function Panel() {
                 <Col sm={2} md={1} className={'mx-auto'}>
                     <PanelSidebar />
                 </Col>
-                <Col sm={10} md={11}>
+                <Col sm={10} md={11} className="sidebar-opposite">
                     <Switch>
                         <Route exact path="/panel">
                             <PanelProfile />

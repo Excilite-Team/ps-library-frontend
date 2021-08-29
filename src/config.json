@@ -1,4 +1,4 @@
 {
-    "apiUrl": "http://localhost:5000/api",
+    "apiUrl": "https://ps-library-backend.herokuapp.com/api",
     "authKey": "x-library-auth"
 }

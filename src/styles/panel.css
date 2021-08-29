@@ -4,6 +4,25 @@
     width: 12%;
     position: fixed;
     font-size: 3em;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 526px) {
+    .sidebar {
+        width: 17%;
+        font-size: 2em;
+    }
+    .sidebar-opposite {
+        position: absolute;
+        left: 40px;
+    }
+}
+
+
+@media only screen and (man-width: 991.98px) {
+    .sidebar {
+        width: 17%;
+    }
 }
 
 @media only screen and (min-width: 991.98px) {

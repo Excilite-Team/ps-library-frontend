@@ -7,22 +7,35 @@ import { useHistory } from 'react-router-dom';
 export default function Order({ order, isAdmin = false }) {
     const history = useHistory();
     const [book, setBook] = React.useState(null);
+    const [user, setUser] = React.useState(null);
     const [loading, setLoading] = React.useState(true);
     const [isModalOpened, setIsModalOpened] = React.useState(false);
 
     React.useEffect(() => {
+        let fetchUser = async () => {
+            const { success, data } = await api.get('/users/' + order.userId, { auth: true });
+            if (success) {
+                setUser(data?.data);
+            } else {
+                console.log(data);
+                alert("Noma'lum xatolik yuz berdi, iltimos sahifani yangilang!");
+            }
+        }
         let fetchBook = async () => {
             const { success, data } = await api.get('/books/' + order.bookId);
             if (success) {
                 setBook(data.data);
             } else {
                 console.log(data);
-                alert('Qandaydir xatolik yuz berdi, iltimos sahifani yangilang!');
+                alert("Noma'lum xatolik yuz berdi, iltimos sahifani yangilang!");
+            }
+            if (isAdmin) {
+                await fetchUser();
             }
             setLoading(false);
         }
         fetchBook();
-    }, [order.bookId]);
+    }, [order.bookId, isAdmin, order.userId]);
 
     const handleCancel = (e) => {
         if (!isAdmin) {
@@ -90,6 +103,16 @@ export default function Order({ order, isAdmin = false }) {
                                 <h4>{book.name.slice(0, 12)}...</h4>
                             </Card.Header>
                             <Card.Body>
+                                {
+                                    isAdmin
+                                        ?
+                                        <>
+                                            <p>Ism: <i>{user.name}</i></p>
+                                            <p>Email: <i>{user.email}</i></p>
+                                        </>
+                                        :
+                                        <></>
+                                }
                                 <p>Oxirgi muddat: {new Date(order.until).toLocaleDateString()}</p>
                                 {
                                     order.isCancelled
@@ -120,17 +143,17 @@ export default function Order({ order, isAdmin = false }) {
                                             <br />
                                             {
                                                 !(order.isCancelled || order.isAccepted)
-                                                ?
-                                                <Row>
-                                                    <Col sm={6}>
-                                                        <Button variant={'success'} onClick={handleAccept}>Accept</Button>
-                                                    </Col>
-                                                    <Col sm={6}>
-                                                        <Button variant={'danger'} onClick={handleCancel}>Cancel</Button>
-                                                    </Col>
-                                                </Row>
-                                                :
-                                                <Button variant={'success'} onClick={handleComplete}>Complete</Button>
+                                                    ?
+                                                    <Row>
+                                                        <Col sm={6}>
+                                                            <Button variant={'success'} onClick={handleAccept}>Accept</Button>
+                                                        </Col>
+                                                        <Col sm={6}>
+                                                            <Button variant={'danger'} onClick={handleCancel}>Cancel</Button>
+                                                        </Col>
+                                                    </Row>
+                                                    :
+                                                    <Button variant={'success'} onClick={handleComplete}>Complete</Button>
                                             }
                                         </>
                                         :
