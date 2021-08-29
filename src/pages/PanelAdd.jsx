@@ -53,6 +53,10 @@ export default function Paneladd() {
                                 <option>klassika</option>
                                 <option>detektiv</option>
                                 <option>biznes</option>
+                                <option>roman</option>
+                                <option>biografiya</option>
+                                <option>avtobiografiya</option>
+                                <option>falsafa</option>
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className={'mb-3'} controlId={'book-image'}>
