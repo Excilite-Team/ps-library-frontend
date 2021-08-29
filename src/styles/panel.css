@@ -1,7 +1,21 @@
 .sidebar {
     background-color: #1C212D;
     height: 100vh;
+    width: 12%;
+    position: fixed;
     font-size: 3em;
+}
+
+@media only screen and (min-width: 991.98px) {
+    .sidebar {
+        width: 8%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .sidebar {
+        width: 6%;
+    }
 }
 
 .sidebar ul {

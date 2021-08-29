@@ -34,7 +34,7 @@ export default function BookDetails({ book, show, onHide }) {
             <Modal.Header closeButton>
                 <Modal.Title id="container-modal-title">Kitob haqida</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className={"py-5"}>
                 <Row>
                     <Col className="text-center">
                         <div className={'book-image p-4'}>

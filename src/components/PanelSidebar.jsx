@@ -24,7 +24,7 @@ export default function PanelSidebar() {
         updateActive();
     }, []);
     return (
-        <div className={'sidebar'}>
+        <div className={'sidebar col-sm-2 col-md-1'}>
             <ul className={'mx-auto p-0'}>
                 <li className={active === 'profile' && 'active'}>
                     <Link to={'/panel'} onClick={() => updateActive('profile')}>

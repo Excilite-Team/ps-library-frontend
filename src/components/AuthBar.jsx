@@ -26,7 +26,7 @@ export default function AuthBar() {
             {
                 token
                     ?
-                    <div className={'authbar'}>
+                    <div className={'authbar d-flex justify-content-between justify-content-md-evenly align-items-center'}>
                         <Button title={"So'rovlar"} variant="primary"><Link to={'/orders'} className={'color'}><MdLibraryBooks /></Link></Button>
                         <Dropdown>
                             <Dropdown.Toggle variant="primary" id="auth-dropdown">
@@ -48,7 +48,7 @@ export default function AuthBar() {
                         </Dropdown>
                     </div>
                     :
-                    <div className={'authbar'}>
+                    <div className={'authbar d-flex justify-content-between justify-content-md-evenly align-items-center'}>
                         <Button title={"Ro'yhatdan o'tish"} variant="primary"><Link to={'/auth/register'} className='color'><RiLoginCircleLine /></Link></Button>
                         <Button title={"Tizimga kirish"} variant='primary'><Link to={'/auth/login'} className='color'><RiAccountCircleFill /></Link></Button>
                     </div>

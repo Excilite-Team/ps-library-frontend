@@ -11,7 +11,7 @@ export default function Slider() {
         {
             image: 'https://media.istockphoto.com/photos/bookshelves-and-laptops-are-placed-on-the-library-deskelearning-class-picture-id1177967778?k=20&m=1177967778&s=612x612&w=0&h=ZN9cQR6jog3wcWDsB5bUIqLRi_pLCr1Er7p6UioAQ8E=',
             title: "Ko'cha kezishning hojati yo'q!",
-            description: "Siz endilikda o'z uyingizda istagan kitobingizni kutuxonadan qidirishingiz va u haqida ma'lumotlarni aniq bilib olishingiz mumkin"
+            description: "Siz endilikda o'z uyingizda istagan kitobingizni kutubxonadan qidirishingiz va u haqida ma'lumotlarni aniq bilib olishingiz mumkin"
         },
         {
             image: 'https://images.unsplash.com/photo-1522211988038-6fcbb8c12c7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGxpYnJhcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80',

@@ -1,5 +1,5 @@
-import '../styles/books-list.css';
 import React from 'react';
+import '../styles/books.css';
 import { Row, Col } from 'react-bootstrap';
 import { ImSleepy } from 'react-icons/im';
 import Book from './Book';
@@ -33,9 +33,13 @@ export default function ListBooks({ books }) {
             {
                 filteredBooks?.length > 0
                     ?
-                    filteredBooks?.map(book => (
-                        <Book key={book.bookID} book={book} />
-                    ))
+                    <div className="books row">
+                        {
+                            filteredBooks?.map(book => (
+                                <Book key={book.bookID} book={book} />
+                            ))
+                        }
+                    </div>
                     :
                     <h4 className={'text-secondary text-center p-5'}>Birorta ham kitob topilmadi. Zerikarli... <ImSleepy /></h4>
             }
@@ -45,14 +49,14 @@ export default function ListBooks({ books }) {
 
 function FilterArea({ categories, onFilter }) {
     return (
-        <div className="books-filter">
+        <div className="books-filter mb-4">
             <Row>
-                <Col sm={8} md={10}>
+                <Col sm={8} md={10} className="col-8">
                     <h3 className={'mx-5 my-auto'}>
                         Kitoblar
                     </h3>
                 </Col>
-                <Col sm={4} md={2}>
+                <Col sm={4} md={2} className="col-4 d-flex align-items-center">
                     <div className="select">
                         <select onChange={onFilter} defaultValue={"Janr"}>
                             <option disabled>Janr</option>

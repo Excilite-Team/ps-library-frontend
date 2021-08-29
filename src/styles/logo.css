@@ -9,6 +9,15 @@
     line-height: 29px;
 }
 
+.logo > * {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    margin: auto
+}
+
 .logo-outer a {
     color: inherit;
 }

@@ -35,8 +35,8 @@ export default function Login() {
 
     return (
         <Layout title={'Login'}>
-            <Row className={'m-5 p-5'}>
-                <Col sm={12} md={6} lg={6} className={'mx-auto my-5'}>
+            <Row className={'mx-2 px-2 py-5 my-5'}>
+                <Col sm={12} md={8} lg={5} className={'mx-auto my-5'}>
                     <Form onSubmit={handleSubmit} className={'text-center my-3 p-5 auth'}>
                         <Form.Group className={'mb-3'} controlId={'login-email'}>
                             <Form.Label>Email*:</Form.Label>

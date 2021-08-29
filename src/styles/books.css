@@ -1,12 +1,10 @@
-.books > h1 {
-    margin: 10% auto;
-    text-align: center;
-}
+/* .books {
+} */
 
 .book {
     display: inline-block;
-    width: 18%;
-    margin: 1%;
+    /* width: 18%; */
+    /* margin: 1%; */
 }
 
 .book img {

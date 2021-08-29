@@ -31,8 +31,8 @@ export default function Paneladd() {
 
     return (
         <Layout title={'Yangi kitob'}>
-            <Row className={'m-5 p-5'}>
-                <Col sm={12} md={6} lg={6} className={'mx-auto my-5'}>
+            <Row className={'mx-2 px-2'}>
+                <Col sm={12} md={8} lg={6} className={'mx-auto my-5'}>
                     <Form onSubmit={handleSubmit} className={'text-center my-3 p-5 auth'}>
                         <Form.Group className={'mb-3'} controlId={'book-name'}>
                             <Form.Label>Kitob nomi*:</Form.Label>

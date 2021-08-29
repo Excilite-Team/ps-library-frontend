@@ -42,7 +42,7 @@ export default function Orders() {
                         <Spinner animation="border" variant="primary" />
                     </div>
                     :
-                    <div className={"orders"}>
+                    <div className={"orders row"}>
                         {
                             orders.map(order => (
                                 <Order order={order} />

@@ -84,7 +84,7 @@ export default function Order({ order, isAdmin = false }) {
                         <Spinner animation="border" variant="primary" />
                     </div>
                     :
-                    <div className={"order text-center p-3 d-inline-block"}>
+                    <div className={"order text-center p-3 d-inline-block col-6 col-md-4 col-lg-3"}>
                         <Card>
                             <Card.Header className={'bg-primary color'}>
                                 <h4>{book.name.slice(0, 12)}...</h4>
@@ -122,10 +122,10 @@ export default function Order({ order, isAdmin = false }) {
                                                 !(order.isCancelled || order.isAccepted)
                                                 ?
                                                 <Row>
-                                                    <Col>
+                                                    <Col sm={6}>
                                                         <Button variant={'success'} onClick={handleAccept}>Accept</Button>
                                                     </Col>
-                                                    <Col>
+                                                    <Col sm={6}>
                                                         <Button variant={'danger'} onClick={handleCancel}>Cancel</Button>
                                                     </Col>
                                                 </Row>

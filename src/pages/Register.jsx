@@ -36,8 +36,8 @@ export default function Register() {
 
     return (
         <Layout title={'Registratsiya'}>
-            <Row className={'m-5 p-5'}>
-                <Col sm={12} md={6} lg={6} className={'mx-auto my-5'}>
+            <Row className={'mx-2 px-2 my-5 py-5'}>
+                <Col sm={12} md={8} lg={5} className={'mx-auto my-5'}>
                     <Form onSubmit={handleSubmit} className={'text-center my-3 p-5 auth'} autoComplete={'off'}>
                         <Form.Group className={'mb-3'} controlId={'register-name'}>
                             <Form.Label>Ism, familiyangiz*:</Form.Label>
