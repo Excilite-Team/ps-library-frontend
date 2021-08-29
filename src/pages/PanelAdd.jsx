@@ -46,12 +46,13 @@ export default function Paneladd() {
                             <Form.Label>Kitob nomi*:</Form.Label>
                             <Form.Select required name="genre" defaultValue={'default'}>
                                 <option disabled value="default">Kategoriyani tanlang</option>
-                                <option>adventure</option>
-                                <option>sci-fi</option>
-                                <option>romance</option>
-                                <option>comedy</option>
-                                <option>classical</option>
-                                <option>detective</option>
+                                <option>sarguzasht</option>
+                                <option>fantastika</option>
+                                <option>romantika</option>
+                                <option>komediya</option>
+                                <option>klassika</option>
+                                <option>detektiv</option>
+                                <option>biznes</option>
                             </Form.Select>
                         </Form.Group>
                         <Form.Group className={'mb-3'} controlId={'book-image'}>
