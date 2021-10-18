@@ -1,4 +1,5 @@
 {
     "apiUrl": "https://ps-library-backend.herokuapp.com/api",
-    "authKey": "x-library-auth"
+    "authKey": "x-library-auth",
+    "PORT": "5151"
 }
