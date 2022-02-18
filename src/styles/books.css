@@ -60,7 +60,7 @@
     }
 }
 
-.title-focus:focus {
+.title-focus:hover {
     opacity: 0.6;
     cursor: pointer;
 }
