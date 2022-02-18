@@ -17,14 +17,14 @@ export default function Book({ book }) {
                     <Card.Img variant="top" src={book.image} />
                 </div>
                 <Card.Body className={'text-center'}>
-                    <Card.Title>{book.name.slice(0, 15)}...</Card.Title>
+                    <Card.Title className={'title-focus'} onClick={() => setIsModalOpened(true)}>{book.name.slice(0, 15)}...</Card.Title>
                     <Card.Text className="text-secondary">{book.author}</Card.Text>
                     {/* <Genre genre={book.genre} />
                 <br />
                 <br /> */}
-                    <Button variant="primary" onClick={() => setIsModalOpened(true)}>
+                    {/* <Button variant="primary" onClick={() => setIsModalOpened(true)}>
                         Batafsil
-                    </Button>
+                    </Button> */}
                     <Button variant="success" onClick={goToPdf}>
                         Elektron format
                     </Button>
