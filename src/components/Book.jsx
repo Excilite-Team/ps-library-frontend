@@ -5,6 +5,11 @@ import BookDetails from './BookDetails';
 
 export default function Book({ book }) {
     const [isModalOpened, setIsModalOpened] = React.useState(false);
+
+    const goToPdf = () => {
+        window.open(book.pdf, '_blank');
+    }
+
     return (
         <div className={'book col-12 px-5 px-sm-2 col-sm-6 col-md-4 col-lg-3 p-3'}>
             <Card>
@@ -19,6 +24,9 @@ export default function Book({ book }) {
                 <br /> */}
                     <Button variant="primary" onClick={() => setIsModalOpened(true)}>
                         Batafsil
+                    </Button>
+                    <Button variant="success" onClick={goToPdf}>
+                        Elektron format
                     </Button>
                     <BookDetails
                         book={book}

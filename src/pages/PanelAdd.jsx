@@ -15,6 +15,7 @@ export default function Paneladd() {
             author: form.get("author"),
             genre: form.get("genre"),
             image: form.get("image"),
+            pdf: form.get("pdf"),
             isAvailable: true
         };
         let addBook = async (book) => {
@@ -63,6 +64,10 @@ export default function Paneladd() {
                         <Form.Group className={'mb-3'} controlId={'book-image'}>
                             <Form.Label>Kitob rasmi*:</Form.Label>
                             <Form.Control required as="textarea" rows={3} name="image" placeholder={'Rasm manzilini kiriting'} />
+                        </Form.Group>
+                        <Form.Group className={'mb-3'} controlId={'book-pdf'}>
+                            <Form.Label>PDF havola:</Form.Label>
+                            <Form.Control as="textarea" rows={2} name="pdf" placeholder={'PDF havolasini kiriting'} />
                         </Form.Group>
                         <Button type="submit" variant="primary" className={'mb-3'}>
                             Qo'shish
