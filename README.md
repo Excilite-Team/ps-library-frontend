@@ -2,6 +2,32 @@
 
 ### The app is designed to be used for management and make both librarians' and readers' lives easier by displaying information about various books using brief descriptions, their availability and genres. 
 ### The app also has an administrator panel, which is used by librarians to keep track of books, and used to remove and add books. 
+## Demo Showcase
+#### - Homepage
+<img width="100%" src="demo/1-home.png" alt="Homepage" />
+
+#### - List of books in homepage
+<img width="100%" src="demo/2-home-books.png" alt="Books List" />
+
+#### - Book details
+<img width="100%" src="demo/3-book-details.png" alt="Book Details" />
+
+#### - List of reservations of student
+<img width="100%" src="demo/4-student-reservations.png" alt="Student reservations" />
+
+#### - Adding a book in librarian(admin) panel
+<img width="100%" src="demo/5-add-book.png" alt="Adding a book" />
+
+#### - List of books in librarian(admin) panel
+<img width="100%" src="demo/6-librarian-books.png" alt="Librarian Books" />
+
+#### - List of reservation requests in librarian(admin) panel
+<img width="100%" src="demo/7-requests-management.png" alt="Requests management" />
+
+
+
+
+
 #### The app is made using: 
 - `"Express"`, a simple but efficient backend framework;
 - `"Mongo"`, a versatile non-SQL database technology; 
@@ -11,7 +37,7 @@
 - `"Monk"`,  package to build a connection with database;
 - `"Nanoid"` node package, for making unique identifiers on the run;
 
-### The architecture of our app is quite simple:
+### The features of our app are quite simple:
 - Users can sign up using their email and password; 
 - The system will cihper the password; 
 - Give the user a unique identifier
